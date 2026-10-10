@@ -195,6 +195,10 @@ function NotesView({ token }) {
 
   return (
     <div>
+      <div className="page-head">
+        <h4>My Notes</h4>
+        <p>Private to you. Only you can see these.</p>
+      </div>
       <div className="card shadow-sm mb-4">
         <div className="card-body">
           <h5 className="card-title">New note</h5>
@@ -339,6 +343,10 @@ function PostsView({ token, user }) {
 
   return (
     <div>
+      <div className="page-head">
+        <h4>My Posts</h4>
+        <p>Published posts. Visible to everyone.</p>
+      </div>
       <div className="card shadow-sm mb-4">
         <div className="card-body">
           <h5 className="card-title">Publish a post</h5>
@@ -431,6 +439,10 @@ function AdminView({ token }) {
 
   return (
     <div>
+      <div className="page-head">
+        <h4>Administration</h4>
+        <p>Manage users, review all notes and interest groups.</p>
+      </div>
       {(error || userError) && <div className="alert alert-danger">{error || userError}</div>}
       <div className="card shadow-sm mb-4">
         <div className="card-body">
@@ -559,7 +571,7 @@ export default function App() {
 
   return (
     <div className="app-bg">
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
+      <nav className="navbar navbar-expand navbar-dark app-navbar shadow-sm">
         <div className="container">
           <span className="navbar-brand">Secure Notes</span>
           <ul className="navbar-nav me-auto">
