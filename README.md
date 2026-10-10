@@ -18,7 +18,16 @@ Login/Register, My Notes (list, create, edit, delete), My Posts (publish, view v
 
 JWT is stored in localStorage and sent as `Authorization: Bearer <token>`. Admin nav is hidden for non-admins; the API enforces permissions.
 
+## Demo accounts (live testing)
+
+Log in at `https://secure-notes-frontend.pages.dev/` with these demo-only accounts (delete/rotate after interview):
+
+| Role | Email | Password |
+|---|---|---|
+| Admin | sara.admin@test.com | Pass1234 |
+| User | arif@test.com | Pass1234 |
+
 ## Live URLs
 
-- Frontend: TBD
-- Backend API: TBD
+- Frontend: https://secure-notes-frontend.pages.dev/
+- Backend API: https://secure-notes-backend-yyo2.onrender.com
